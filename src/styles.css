@@ -8,7 +8,12 @@
   --color-neutral-black: hsl(0, 0%, 8%);
   --font-weight-regular: 400;
   --font-weight-medium: 600;
-  --fontweight-bold: 700;
+  --font-weight-bold: 700;
+}
+
+/* taken care of with hover/focus states */
+button:focus {
+  outline: none;
 }
 
 .App {
@@ -31,31 +36,34 @@ body {
 .card {
   background-color: var(--color-neutral-grey-dark);
   padding: 2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .card img {
-  width: 30%;
+  width: 25%;
   border-radius: 100%;
 }
 
 .card h1 {
   font-size: 1.5em;
+  font-weight: var(--font-weight-medium);
   padding: 0;
-  margin: 0;
+  margin: 0.5em 0 0;
 }
 
 .card h2 {
-  font-size: 1em;
+  font-size: 0.8em;
   color: var(--color-primary);
-  padding: 0.5em;
-  margin: 0;
+  /* padding: 0.5em; */
+  margin: 0.5em 0 0;
 }
 
 .card p {
-  padding: 1em;
-  margin-block: 0.5em;
-  font-style: italic;
+  font-size: 0.75em;
+  font-weight: var(--font-weight-regular);
+  padding: 1.5em;
+  padding-inline: 4em;
+  margin-block: 1em;
 }
 
 .buttons {
@@ -72,7 +80,8 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
-.buttons button:hover {
+.buttons button:hover,
+.buttons button:focus {
   cursor: pointer;
   background-color: var(--color-primary);
   color: var(--color-neutral-black);
