@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-grey: hsl(0, 0%, 20%);
+  --color-neutral-grey-dark: hsl(0, 0%, 12%);
+  --color-neutral-black: hsl(0, 0%, 8%);
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --fontweight-bold: 700;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-neutral-white);
+  background-color: var(--color-neutral-black);
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--color-neutral-grey-dark);
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.card img {
+  width: 30%;
+  border-radius: 100%;
+}
+
+.card h1 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.card h2 {
+  font-size: 1em;
+  color: var(--color-primary);
+  padding: 0.5em;
+  margin: 0;
+}
+
+.card p {
+  padding: 1em;
+  margin-block: 0.5em;
+  font-style: italic;
+}
+
+.buttons {
+  display: grid;
+  gap: 1em;
+}
+
+.buttons button {
+  border: none;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: var(--color-neutral-grey);
+  color: var(--color-neutral-white);
+  font-weight: var(--font-weight-medium);
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-black);
+}
