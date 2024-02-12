@@ -9,7 +9,7 @@ export default function Card() {
     "Instagram",
   ];
   return (
-    <div className="card">
+    <main className="card">
       <img src={profile} alt="avatar-jessica.jpeg" />
       <h1>Jessica Randall</h1>
       <h2>London, United Kingdom</h2>
@@ -19,6 +19,6 @@ export default function Card() {
           <button key={item}>{item}</button>
         ))}
       </div>
-    </div>
+    </main>
   );
 }
